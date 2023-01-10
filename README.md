@@ -15,3 +15,11 @@ const vertex2 = new Vertex(object2);
 
 const edge1 = graph.addEdge(vertex1, vertex2);
 ```
+
+## Repository set-up
+
+```
+npm init --scope=@ralfderijcke
+npm install --global typescript
+tsc --init
+```

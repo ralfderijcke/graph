@@ -1,4 +1,6 @@
+import { Edge } from "./edge";
 import { Random } from "./random";
+import { Vertex } from "./vertex";
 
 export class Graph {
     public edges: Array<Edge> = [];
@@ -37,29 +39,5 @@ export class Graph {
         const nextDirection = target.graphKey == nextEdge.source.graphKey;
 
         return [nextEdge, nextDirection];
-    }
-}
-
-export class Vertex {
-    public readonly graphKey: string = Random.string(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
-    public readonly value: object
-
-    constructor(value: object) {
-        this.value = value;
-    }
-}
-
-export class Edge {
-    public source: Vertex;
-    public target: Vertex;
-
-    constructor(source: Vertex, target: Vertex) {
-        this.source = source;
-        this.target = target;
-    }
-
-    equals(edge: Edge): boolean {
-        return (this.source.graphKey == edge.source.graphKey && this.target.graphKey == edge.target.graphKey)
-            || (this.source.graphKey == edge.target.graphKey && this.target.graphKey == edge.source.graphKey)
     }
 }
