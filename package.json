@@ -1,0 +1,22 @@
+{
+  "name": "@ralfderijcke/graph",
+  "version": "1.0.0",
+  "description": "Basic graph data structure to store data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ralfderijcke/graph.git"
+  },
+  "keywords": [
+    "graph"
+  ],
+  "author": "Ralf de Rijcke",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ralfderijcke/graph/issues"
+  },
+  "homepage": "https://github.com/ralfderijcke/graph#readme"
+}
