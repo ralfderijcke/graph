@@ -1,6 +1,6 @@
 {
   "name": "@ralfderijcke/graph",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Basic graph data structure to store data",
   "main": "index.js",
   "scripts": {
