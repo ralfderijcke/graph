@@ -1,5 +1,4 @@
 import { Edge } from "./edge";
-import { Random } from "./random";
 import { Vertex } from "./vertex";
 
 export class Graph {
@@ -26,14 +25,18 @@ export class Graph {
 
         const targetEdges = this.edges.filter(e => e.source.graphKey == target.graphKey || e.target.graphKey == target.graphKey);
 
-        // const nextEdge = targetEdges.find(e => !e.equals(edge)); // Not itself
-        // Take random edge
-        const nextEdges = targetEdges.filter(e => !e.equals(edge));
+        const nextEdges = targetEdges.filter(e => !e.equals(edge)); // Not itself
         if (!nextEdges.length) {
             return;
         }
-        const n = Random.number(0, nextEdges.length);
-        console.log(n);
+
+        function randomNumber(min: number, max: number): number {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min) + min); // The maximum is exclusive and the minimum is inclusive
+        }
+
+        const n = randomNumber(0, nextEdges.length);
         const nextEdge = nextEdges[n];
 
         const nextDirection = target.graphKey == nextEdge.source.graphKey;

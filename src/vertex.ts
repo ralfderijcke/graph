@@ -1,7 +1,5 @@
-import { Random } from "./random";
-
 export class Vertex {
-    public readonly graphKey: string = Random.string(8, '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ');
+    public readonly graphKey: string = window.crypto.randomUUID();
     public readonly value: object;
 
     constructor(value: object) {
