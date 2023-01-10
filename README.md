@@ -1,6 +1,6 @@
 # Graph
 
-![npm version](https://img.shields.io/npm/v/@ralfderijcke/graph)
+[![npm version](https://img.shields.io/npm/v/@ralfderijcke/graph)](https://www.npmjs.com/package/@ralfderijcke/graph)
 
 Basic graph data structure to store data.
 
