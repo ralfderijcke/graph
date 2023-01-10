@@ -6,7 +6,7 @@ Basic graph data structure to store data.
 
 ## Installation
 
-[@ralfderijcke/graph](https://www.npmjs.com/package/@ralfderijcke/graph) is available as a npm.
+[@ralfderijcke/graph](https://www.npmjs.com/package/@ralfderijcke/graph) is available as a package on npm.
 
 ```sh
 npm install @ralfderijcke/graph --save
