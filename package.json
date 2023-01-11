@@ -1,6 +1,6 @@
 {
   "name": "@ralfderijcke/graph",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Basic graph data structure to store data",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,9 @@
   },
   "keywords": [
     "graph"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Ralf de Rijcke",
   "license": "ISC",
