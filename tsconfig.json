@@ -8,10 +8,15 @@
     "module": "commonjs",
     "declaration": true,
     "outDir": "./dist",
-    "removeComments": true,
     "strict": true,
+    "sourceMap": true,
+    "rootDir": "src"
   },
   "include": [
-    "src/**/*.ts"
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
   ]
 }
