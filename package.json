@@ -1,6 +1,6 @@
 {
   "name": "@ralfderijcke/graph",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Basic graph data structure to store data",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
